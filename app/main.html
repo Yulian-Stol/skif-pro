@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Start Optimazed</title>
+	<meta name="description" content="Startup HTML Optimized">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="img/preview.jpg">
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+	<script src="js/app.min.js" defer></script>
+	<script src="assets/effect-calc.js" defer></script>
+	<script src="assets/scroll.js" defer></script>
+	<link rel="stylesheet" href="assets/styles.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/jquery.maskedinput.min.js"></script>
+
+</head>
+
+
+<body>
+	<header class="header">
+		<div class="header__size">
+			<div class="container header__container">
+				<a href="main.html" class="header__logo">
+					<img src="img/logo.svg" alt="">
+					<p>Работаем с 2013 года</p>
+				</a>
+				<button class="hamburger" type="button">
+					<span class="hamburger__item"></span>
+				</button>
+	
+				<div class="header__nav">
+	
+					<div class="header__item accordion">
+						<div class="header__title accordion__header">
+							<span class="hamburger__nav">
+								<p class="hamburger__nav_item"></p>
+							</span><p>О компании</p>
+						</div>
+	
+						<div class="header__list accordion__content">
+							<a href="main.html#team">Наша команда</a>
+							<a href="company.html">Контактная информация</a>
+							<a href="document.html">Сертификаты</a>
+							<a href="video.html">Видеоинструкция</a>
+						</div>
+					</div>
+
+					<div class="header__item accordion">
+						<div class="header__title accordion__header">
+							<span class="hamburger__nav">
+								<p class="hamburger__nav_item"></p>
+							</span><p>Области применения</p>
+						</div>
+	
+						<div class="header__list accordion__content">
+							<a href="technology-1.html">Сельское хозяйство</a>
+							<a href="technology-2.html">Грузоперевозки</a>
+							<a href="technology-4.html">Коммунальные службы</a>
+							<a href="technology-6.html">Строительство  и эксплуатация сооружений</a>
+							<a href="technology-5.html">Промышленные производства</a>
+							<a href="technology-3.html">Службы такси и каршеринг</a>
+							<a href="technology-7.html">Водный транспорт</a>
+							<a href="technology-8.html">Воздушный транспорт</a>
+							<a href="technology-9.html">Персональное использование</a>
+						</div>
+					</div>
+
+					<div class="header__item accordion">
+						<div class="header__title accordion__header">
+							<span class="hamburger__nav">
+								<p class="hamburger__nav_item"></p>
+							</span><p>Технологии</p>
+						</div>
+	
+						<div class="header__list accordion__content">
+							<a href="program.html">Доработка ПО</a>
+						</div>
+					</div>
+
+					<button class="btn btn--mobile">Демо-версия</button>
+
+				</div>
+	
+				<button class="btn btn--header">Демо-версия</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="banner">
+		<div class="banner__size">
+			<div class="container">
+	
+				<h1 class="h1 banner__title">Мониторинг, диспетчеризация<br> 
+					и контроль транспорта.</h1>
+	
+				<p class="banner__text">
+					SKIF.PRO – это полностью собственная разработка с 
+					нулевого цикла на<br> базе JAVA8, российский аналог зарубежных 
+					ПО для мониторинга<br> транспорта в сегменте ПРО.
+				</p>
+	
+				<a href="#contact" class="btn btn--banner">Связаться с нами</a>
+	
+				<div class="banner__contact">
+					<p>
+						<svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M18.594 10.852C18.594 10.4712 18.3871 10.119 18.0512 9.92859C17.7156 9.7382 17.3016 9.7382 16.9656 9.92859C16.63 10.119 16.4229 10.4712 16.4229 10.852V20.5602C16.4229 20.8406 16.5353 21.1096 16.7355 21.3093C16.936 21.5089 17.2085 21.6229 17.4938 21.6267C17.7793 21.6305 18.0546 21.5238 18.2606 21.3297L21.9499 17.8515C22.2297 17.5877 22.3449 17.1971 22.2521 16.8272C22.1593 16.4576 21.8727 16.1644 21.5002 16.0583C21.1277 15.9523 20.7259 16.0494 20.4462 16.3132L18.5943 18.0593L18.594 10.852Z" fill="#3787FF"/>
+							<path d="M29.3244 7.14504C29.0383 6.88748 28.6346 6.79935 28.2646 6.91386C27.8946 7.02836 27.6149 7.32782 27.5309 7.69989C27.4468 8.07168 27.5711 8.45925 27.8569 8.7168C30.4291 11.033 32.119 14.1421 32.6474 17.5296C33.1758 20.9171 32.5108 24.3806 30.7625 27.3464C29.0145 30.3127 26.2878 32.6039 23.0334 33.8411C19.7791 35.0784 16.1922 35.1877 12.8661 34.1509C9.53982 33.1141 6.67376 30.9931 4.74212 28.1392C2.8099 25.285 1.9276 21.8689 2.24139 18.4554C2.55488 15.0422 4.04535 11.8361 6.46639 9.36756C8.88715 6.89904 12.0935 5.31633 15.5553 4.88088L14.6912 5.99875H14.6909C14.4564 6.30202 14.4043 6.70513 14.5547 7.05647C14.7048 7.4076 15.0343 7.65347 15.419 7.70134C15.8039 7.74921 16.1853 7.59173 16.4198 7.28847L18.7259 4.30589C18.8868 4.09782 18.9641 3.8389 18.9436 3.57835C18.9228 3.31779 18.8056 3.07382 18.6137 2.8924L15.8646 0.297655C15.5849 0.0335563 15.183 -0.0638113 14.8106 0.0419882C14.4378 0.147788 14.1509 0.44099 14.0581 0.81061C13.9651 1.18051 14.08 1.57108 14.3597 1.8349L15.3376 2.75775V2.75802C11.3799 3.24188 7.70914 5.03917 4.93354 7.85172C2.1578 10.6643 0.443814 14.3238 0.0749395 18.2242C-0.293665 22.1242 0.704974 26.0308 2.90612 29.2978C5.10695 32.5643 8.3779 34.9945 12.1772 36.1858C15.9769 37.377 20.0765 37.2582 23.7979 35.8485C27.5188 34.4388 30.6382 31.8234 32.6387 28.4345C34.6393 25.0462 35.4017 21.0881 34.7991 17.2161C34.1965 13.3441 32.2654 9.79031 29.3254 7.14376L29.3244 7.14504Z" fill="#3787FF"/>
+							<path d="M21.5504 5.29062C22.417 5.52289 23.2611 5.82969 24.0728 6.20747L24.7441 6.56921C25.0839 6.74899 25.4951 6.73812 25.8244 6.54065C26.1537 6.3432 26.3517 5.98907 26.3442 5.61022C26.3367 5.23134 26.1251 4.88483 25.7884 4.6999L25.065 4.31151C24.1187 3.86573 23.1334 3.50508 22.1212 3.23339C21.7476 3.13466 21.3488 3.23883 21.0743 3.50674C20.7999 3.77464 20.6913 4.16575 20.7894 4.53347C20.8877 4.90119 21.1776 5.1895 21.5506 5.29067L21.5504 5.29062Z" fill="#3787FF"/>
+							<path d="M16.4219 29.7678V31.4832C16.4219 31.864 16.629 32.2162 16.9647 32.4066C17.3006 32.597 17.7146 32.597 18.0502 32.4066C18.3862 32.2162 18.593 31.864 18.593 31.4832V29.7678C18.593 29.387 18.3862 29.0348 18.0502 28.8444C17.7146 28.654 17.3006 28.654 16.9647 28.8444C16.629 29.0348 16.4219 29.387 16.4219 29.7678Z" fill="#3787FF"/>
+							<path d="M9.07407 19.8744C9.07407 19.5918 8.95969 19.3206 8.75614 19.1205C8.55259 18.9206 8.27648 18.8082 7.98847 18.8082H6.2418C5.85408 18.8082 5.49575 19.0114 5.30185 19.3413C5.10772 19.6712 5.10772 20.0776 5.30185 20.4075C5.49571 20.7374 5.85407 20.9405 6.2418 20.9405H7.98847C8.27649 20.9405 8.5526 20.8282 8.75614 20.6283C8.95969 20.4284 9.07407 20.1572 9.07407 19.8744V19.8744Z" fill="#3787FF"/>
+							<path d="M28.9931 20.9404C29.3811 20.9404 29.7395 20.7373 29.9334 20.4074C30.1272 20.0774 30.1272 19.6711 29.9334 19.3412C29.7395 19.0113 29.3812 18.8081 28.9931 18.8081H27.2468C26.8588 18.8081 26.5004 19.0113 26.3065 19.3412C26.1127 19.6711 26.1127 20.0775 26.3065 20.4074C26.5004 20.7373 26.8587 20.9404 27.2468 20.9404H28.9931Z" fill="#3787FF"/>
+							<path d="M9.11948 29.0555C9.40749 29.0558 9.68388 28.9434 9.88714 28.743L11.1217 27.5305L11.1215 27.5308C11.389 27.2601 11.4912 26.8709 11.3898 26.507C11.2887 26.1431 10.9993 25.8592 10.6288 25.7596C10.2583 25.6601 9.86199 25.7605 9.58642 26.0232L8.35183 27.2357L8.35211 27.2354C8.14856 27.4353 8.03418 27.7065 8.03418 27.9894C8.03418 28.2719 8.14856 28.5431 8.35211 28.743C8.55566 28.9429 8.83176 29.0555 9.11949 29.0555L9.11948 29.0555Z" fill="#3787FF"/>
+							<path d="M25.1458 10.742L23.9106 11.9545H23.9104C23.7018 12.1533 23.5833 12.4261 23.5811 12.7117C23.5789 12.997 23.6935 13.2714 23.899 13.4735C24.1045 13.6753 24.3839 13.7879 24.6747 13.7857C24.9655 13.7836 25.243 13.6669 25.4457 13.4621L26.6808 12.2496V12.2499C26.9484 11.9792 27.0503 11.5897 26.9489 11.2261C26.8478 10.8622 26.5584 10.578 26.1879 10.4787C25.8176 10.3792 25.4214 10.4795 25.1458 10.742L25.1458 10.742Z" fill="#3787FF"/>
+							<path d="M11.5144 12.4159L10.2792 11.2028V11.2025C10.0037 10.9401 9.60739 10.8397 9.23685 10.9393C8.86658 11.0385 8.57718 11.3228 8.47585 11.6867C8.37477 12.0503 8.47668 12.4398 8.74421 12.7104L9.97936 13.9235C10.2546 14.1867 10.6515 14.2874 11.0223 14.1881C11.3931 14.0888 11.6828 13.8043 11.7839 13.4402C11.885 13.076 11.7825 12.6862 11.5144 12.4159L11.5144 12.4159Z" fill="#3787FF"/>
+							<path d="M25.1318 25.79C24.8562 25.5272 24.4599 25.4272 24.0894 25.5264C23.7191 25.626 23.4297 25.9102 23.3284 26.2738C23.2273 26.6377 23.3292 27.0269 23.5967 27.2976L24.8313 28.5101V28.5098C25.0338 28.7149 25.3113 28.8313 25.602 28.8334C25.8928 28.8356 26.1723 28.723 26.3777 28.5212C26.5832 28.3194 26.6979 28.045 26.6957 27.7594C26.6934 27.4738 26.5749 27.201 26.3664 27.0022L25.1318 25.79Z" fill="#3787FF"/>
+						</svg>
+						Поддержка 24/7
+					</p>
+					<a href="tel:+88001017543">
+						<svg width="30" height="41" viewBox="0 0 30 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.43016 0.825779C3.9949 0.498021 2.52964 1.19737 2.08305 2.47945C-0.454909 11.3274 0.147956 19.3119 3.83556 25.8432C7.52368 32.374 14.2457 37.354 23.6155 40.3813C25.1501 40.8872 26.6133 39.9877 27.0492 38.7431C27.7365 36.6809 28.4264 34.614 29.1124 32.5542C29.5811 31.1116 28.5203 29.732 27.2642 29.3125C25.3222 28.6896 22.8371 27.1356 20.818 25.9037C20.4725 25.6958 20.0199 25.6712 19.6622 25.841L14.9679 28.021C11.4362 24.1116 10.045 21.6246 8.67886 16.7276L13.3383 14.5741C13.7154 14.4002 13.9751 14.0166 13.9915 13.6098C14.0888 11.3036 14.0117 8.23253 14.7959 6.34794C15.1331 4.7875 13.8766 3.56205 12.6872 3.18452L5.42919 0.82625L5.43016 0.825779ZM4.73567 3.00359L12.0295 5.37349C12.3939 5.49914 12.3939 5.49914 12.4666 5.87847C11.6416 8.18874 11.6751 10.8042 11.6316 12.7921L6.73225 15.0805C6.25533 15.3022 5.98618 15.8666 6.11719 16.3702C7.71946 22.4406 9.39364 25.4472 13.8013 30.2075C14.1485 30.581 14.7539 30.7026 15.2122 30.4908L20.1582 28.1801C22.0544 29.3469 24.3222 30.7691 26.5707 31.4902C26.724 31.5724 26.8126 31.8454 26.8252 31.8732L24.784 37.9945C24.6477 38.1458 24.7224 38.345 24.2518 38.1845C15.3483 35.2916 9.25127 30.6794 5.91948 24.7806C2.57888 18.8654 1.96096 11.5665 4.37827 3.13848C4.44971 2.91861 4.44971 2.91861 4.73549 3.0042L4.73567 3.00359Z" fill="#3787FF"/>
+						</svg>
+						8 (800) 101-75-43
+					</a>
+				</div>
+	
+			</div>
+		</div>
+	</section>
+
+	<div class="ekr-sticky__container container">
+		<section class="ekr-sticky tabs">
+			<div class="uk-text-center">
+				<h2 class="h2 ekr-sticky__title"><span>Возможности</span> системы SKIF.PRO:</h2>
+			</div>
+			<div class="sticky--parent">
+				<div>
+					<div class="ekr-sticky__wrap">
+						<img class="image-one active tabs__wrap" src="img/scroll-1.jpg" alt="">
+						<a href="https://www.youtube.com/channel/UC9_Nf9Fy5IIRnFS0X0DLJ1Q/videos" target="_blank">Смотреть на YouTube<svg width="72" height="48" viewBox="0 0 72 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M70.4924 7.5312C70.0847 6.0778 69.2907 4.76196 68.1947 3.72357C67.0677 2.65324 65.6864 1.88761 64.1812 1.49895C58.548 0.0148671 35.979 0.0148674 35.979 0.0148674C26.5703 -0.0921282 17.1638 0.378465 7.8128 1.42399C6.30757 1.84137 4.92888 2.62411 3.79934 3.70258C2.68949 4.76992 1.8856 6.0861 1.46565 7.5282C0.456869 12.9601 -0.0332679 18.4754 0.0018513 24C-0.0341439 29.5196 0.45479 35.0331 1.46565 40.4718C1.8766 41.9079 2.67749 43.2181 3.79034 44.2764C4.90319 45.3347 6.28901 46.0993 7.8128 46.504C13.521 47.9851 35.979 47.9851 35.979 47.9851C45.3997 48.0922 54.8182 47.6217 64.1812 46.576C65.6864 46.1873 67.0677 45.4217 68.1947 44.3514C69.3045 43.293 70.0934 41.9768 70.4894 40.5437C71.5245 35.1139 72.0278 29.5963 71.9922 24.0689C72.07 18.5182 71.5674 12.9745 70.4924 7.5282V7.5312ZM28.804 34.2656V13.7374L47.5815 24.003L28.804 34.2656Z" fill="#FE0000"/>
+							</svg>
+						</a>
+					</div>
+					<img class="image-two tabs__wrap" src="img/scroll-2.jpg" alt="A computer screen showing how Textel can integrate with other contact center software">
+					<img class="image-three tabs__wrap" src="img/scroll-3.jpg" alt="A phone screen showing Textel&#39;s Textbot that can respond to user inquiries via text">
+					<img class="image-four tabs__wrap" src="img/scroll-4.jpg" alt="A phone showing a gift card promotion text message that was sent out to a large group via Textel">
+					<img class="image-five tabs__wrap" src="img/scroll-5.jpg" alt="A phone showing a gift card promotion text message that was sent out to a large group via Textel">
+					<img class="image-six tabs__wrap" src="img/scroll-6.jpg" alt="A phone showing a gift card promotion text message that was sent out to a large group via Textel">
+					<img class="image-seven tabs__wrap" src="img/scroll-7.jpg" alt="A phone showing a gift card promotion text message that was sent out to a large group via Textel">
+					<img class="image-eit tabs__wrap" src="img/scroll-8.jpg" alt="A phone showing a gift card promotion text message that was sent out to a large group via Textel">
+				</div>
+				<div class="parent--text tabs__list">
+						<div class="sticky--text text-one active tabs__item">
+								<span class="text--num">1</span>
+								<p class="text--title">Мониторинг с любого устройства</p>
+						</div>
+						<div class="sticky--text text-two tabs__item">
+								<span class="text--num">2</span>
+								<p class="text--title">Отчет Поездки</p>
+
+						</div>
+						<div class="sticky--text text-three tabs__item">
+								<span class="text--num">3</span>
+								<p class="text--title">Поездки и График</p>
+
+						</div>
+						<div class="sticky--text text-four tabs__item">
+								<span class="text--num">4</span>
+								<p class="text--title">Счетчики и График</p>
+						</div>
+						<div class="sticky--text text-five tabs__item">
+							<span class="text--num">5</span>
+							<p class="text--title">Стоянки и График</p>
+						</div>
+						<div class="sticky--text text-six tabs__item">
+								<span class="text--num">6</span>
+								<p class="text--title">Остановки и график</p>
+
+						</div>
+						<div class="sticky--text text-seven tabs__item">
+								<span class="text--num">7</span>
+								<p class="text--title">Потери связи</p>
+
+						</div>
+						<div class="sticky--text text-eit tabs__item">
+								<span class="text--num">8</span>
+								<p class="text--title">Цифровые датчики</p>
+						</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	<section class="example">
+		<div class="container">
+			<h2 class="h2 example__title">Примеры отчётов</h2>
+			<div class="example__wrap">
+				<div class="example__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide example__slide">
+							<div class="example__block">
+								<img src="img/1.gif" alt="">
+								<p>Отчёт поездки</p>
+							</div>
+						</div>
+
+						<div class="swiper-slide example__slide">
+							<div class="example__block">
+								<img src="img/2.gif" alt="">
+								<p>Отчёт поездки и стоянки</p>
+							</div>
+						</div>
+						<div class="swiper-slide example__slide">
+							<div class="example__block">
+								<img src="img/3.gif" alt="">
+								<p>Отчёт поездки и стоянки</p>
+							</div>
+						</div>
+						<div class="swiper-slide example__slide">
+							<div class="example__block">
+								<img src="img/4.gif" alt="">
+								<p>Отчёт поездки и стоянки</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="example__pagination"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<h2 class="h2 contact__title">Связаться с нами</h2>
+			<script type="text/javascript">jQuery(function($){$("#formPhone").mask("+7 999 999 99 99");});</script>
+
+			<form action="#" class="form" method="POST">
+
+				<div class="form__wrap">
+
+					<div class="form__item">
+						<label for="formName" class="form__label">Имя</label>
+						<input id="formName" type="text" name="name" placeholder="Введите имя" class="form__input _req">
+					</div>
+
+					<div class="form__item">
+						<label for="formMail" class="form__label">Электронная почта</label>
+						<input id="formMail" type="email" name="mail" placeholder="@gmail.com" class="form__input _req _email">
+					</div>
+
+					<div class="form__item">
+						<label for="formPhone" class="form__label">Номер телефона</label>
+						<input id="formPhone" type="tel" name="phone" placeholder="+7 ___ ___ __ __" class="form__input _req">
+					</div>
+
+					<div class="form__btn">
+						<button type="submit" class="btn btn--form" name="submit">Подключиться сейчас</button>
+					</div>
+
+				</div>
+
+				<div class="form__item">
+					<div class="form__checkbox">
+						<input id="formAgreement" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
+						<label for="formAgreement" class="form__checkbox_label">Я ознакомлен с офертой и согласен на предоставление и обработку персональных данных</label>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+	</section>
+
+	<section class="advantages">
+		<div class="advantages__size">
+			<div class="container">
+				<div class="h2 advantages__title"><span>Преимущества</span> системы</div>
+
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/benefit_1.png" alt="">
+					</div>
+
+					<div class="advantages__text">
+						<div class="advantages__text_title">
+							Мультисервисная система – гарантия <br>надёжной и бесперебойной работы.
+						</div>
+						<div class="advantages__text_subtitle">
+							(одновременно работает 13 серверов в связке, что<br> гарантирует бесперебойную и корректную работу<br> системы даже при сбоях на отдельных ресурсах)
+						</div>
+					</div>
+				</div>
+
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/benefit_2.png" alt="">
+					</div>
+
+					<div class="advantages__text">
+						<div class="advantages__text_title">
+							Быстрые обновления производимые в<br> фоновом режиме
+						</div>
+						<div class="advantages__text_subtitle">
+							(не доставляют неудобств пользователю при<br> использовании системы)
+						</div>
+					</div>
+				</div>
+
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/benefit_3.png" alt="">
+					</div>
+
+					<div class="advantages__text">
+						<div class="advantages__text_title">
+							Быстрая обработка объёмных массивов<br> данных за большой период без<br> длительного ожидания отчёта
+						</div>
+						<div class="advantages__text_subtitle">
+							(есть возможность оперативно работать с большим<br> объёмом информации)
+						</div>
+					</div>
+				</div>
+
+				<div class="advantages__item">
+					<div class="advantages__img">
+						<img src="img/benefit_4.png" alt="">
+					</div>
+
+					<div class="advantages__text">
+						<div class="advantages__text_title">
+							Полноценное мобильное приложение.
+						</div>
+						<div class="advantages__text_subtitle">
+							Всегда под рукой отчеты и оперативные данные.
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="selectus">
+		<div class="selectus__size">
+			<div class="container selectus__container">
+				<h2 class="h2 selectus__title"><span>Почему</span> нас<br> выбирают?</h2>
+				<div class="selectus__list">
+					<div class="selectus__item">
+						<p>Мультисервисная архитектура работает на 13 независимых серверах </p>
+						<b>1</b>
+					</div>
+	
+					<div class="selectus__item">
+						<p>Облачное и локальное решение</p>
+						<b>2</b>
+					</div>
+	
+					<div class="selectus__item">
+						<p>1 персональный отчет в подарок</p>
+						<b>3</b>
+					</div>
+	
+					<div class="selectus__item">
+						<p>Собственная разработка не имеющая аналогов </p>
+						<b>4</b>
+					</div>
+	
+					<div class="selectus__item">
+						<p>любая доработка системы под индивидуальные запросы клиентов</p>
+						<b>5</b>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="area">
+		<div class="area__size">
+			<div class="container">
+				<h2 class="h2 area__title">Все области применения</h2>
+
+				<div class="area__list">
+					<a href="technology-1.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_1.jpg" alt="">
+						</p>
+						<p class="area__text">Сельское хозяйство</p>
+					</a>
+
+					<a href="technology-2.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_2.jpg" alt="">
+						</p>
+						<p class="area__text">Грузоперевозки</p>
+					</a>
+
+					<a href="technology-3.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_3.jpg" alt="">
+						</p>
+						<p class="area__text">Службы такси и каршеринг</p>
+					</a>
+
+					<a href="technology-4.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_4.jpg" alt="">
+						</p>
+						<p class="area__text">Коммунальные<br>
+							и экстренные службы</p>
+					</a>
+
+					<a href="technology-5.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_5.jpg" alt="">
+						</p>
+						<p class="area__text">Промышленные производства</p>
+					</a>
+
+					<a href="technology-6.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_6.jpg" alt="">
+						</p>
+						<p class="area__text">Строительство <br>
+							и эксплуатация сооружений</p>
+					</a>
+
+					<a href="technology-7.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_7.jpg" alt="">
+						</p>
+						<p class="area__text">Водный транспорт <br>
+							и водные грузоперевозки</p>
+					</a>
+
+					<a href="technology-8.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_8.jpg" alt="">
+						</p>
+						<p class="area__text">Воздушный транспорт</p>
+					</a>
+
+					<a href="technology-9.html" class="area__item">
+						<p class="area__img">
+							<img src="img/area_9.jpg" alt="">
+						</p>
+						<p class="area__text">Персональное использование</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact contact--bg">
+		<img class="contact__img" src="img/phone-form.png" alt="">
+		<div class="container">
+			<h2 class="h2 contact__title contact--text">Связаться с нами</h2>
+
+			<script type="text/javascript">jQuery(function($){$("#formPhone1").mask("+7 999 999 99 99");});</script>
+
+			<form action="#" class="form" method="POST">
+
+				<div class="form__wrap">
+
+					<div class="form__item">
+						<label for="formName1" class="form__label contact--text">Имя</label>
+						<input id="formName1" type="text" name="name" placeholder="Введите имя" class="form__input _req contact--border">
+					</div>
+
+					<div class="form__item">
+						<label for="formMail1" class="form__label contact--text">Почта</label>
+						<input id="formMail1" type="email" name="mail" placeholder="@gmail.com" class="form__input _req _email contact--border">
+					</div>
+
+					<div class="form__item">
+						<label for="formPhone1" class="form__label contact--text">Телефон</label>
+						<input id="formPhone1" type="tel" name="phone" placeholder="+7 ___ ___ __ __" class="form__input _req contact--border">
+					</div>
+
+					<div class="form__btn">
+						<button type="submit" class="btn btn--form contact--btn" name="submit">Подключиться сейчас</button>
+					</div>
+
+				</div>
+
+				<div class="form__item">
+					<div class="form__checkbox">
+						<input id="formAgreement1" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
+						<label for="formAgreement1" class="form__checkbox_label contact--text">Я ознакомлен с офертой и согласен на предоставление и обработку персональных данных</label>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+	</section>
+
+	<section class="test">
+		<div class="test__size">
+			<div class="container">
+				<div class="test__wrap">
+					<div class="test__block">
+						<p class="test__title">Бесплатный тест-драйв платформы  СКИФ ПРО на 2 месяца</p>
+						<p class="test__text">Предоставляем бесплатно 60-дневный период для ознакомления с нашей системой и начала работы в ней,<br> а также создадим один кастомизированный отчет под запрос клиента</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="technology">
+		<div class="technology__size">
+			<div class="container">
+				<div class="technology__row">
+					<h2 class="h2 technology__title">Технологии</h2>
+					<a href="#">Примеры наших кейсов</a>
+				</div>
+
+				<div class="technology__wrap">
+
+					<div class="technology__wrap_section">
+						<div class="technology__security">
+							<div class="technology__img">
+								<img src="img/technology.jpg" alt="">
+							</div>
+							<div class="technology__info">
+								<p class="technology__subtitle">Безопасность</p>
+								<p class="technology__text">Платформа защищена проверку на защищенность от атак типа SQL-injection, были устранены все известные уязвимости используемых при разработке компонентов, была проведена проверка работы системы контроля уровня доступа во всех разделах.</p>
+							</div>
+						</div>
+	
+						<div class="technology__arch">
+							<div class="technology__arch_title">
+								<p>Микросервисная архитектура</p>
+							</div>
+							<div class="technology__arch_text">
+								<p>При проектировании микросервисной архитектуры мы использовали наиболее гибкие и надежные механизмы транзакций, репликации и обработки ГЕО-данных. Наличие простого и открытого API позволяет быстро и легко интегрироваться с любыми внешними системами учета и контроля.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="technology__wrap_another">
+						<div class="technology__arch">
+							<div class="technology__arch_title technology--bg">
+								<p>Платформа</p>
+							</div>
+							<div class="technology__arch_text">
+								<p>Платформа для мониторинга подвижных и стационарных объектов созданная на базе новейших и передовых технологий с учетом многолетнего практического опыта в сфере мониторинга подвижных и стационарных объектов. Несмотря на высокую нагруженность, платформа имеет уникальные возможности масштабироваться и модифицироваться, под индивидуальные запросы клиентов</p>
+							</div>
+						</div>
+
+						<div class="technology__arch">
+							<div class="technology__arch_title technology--another">
+								<p>Доработка ПО</p>
+							</div>
+							<div class="technology__arch_text">
+								<p>У кого есть своё ПО мы предлагаем услуги по автоматизации процессов мониторинга на основе нашего опыта и экспертизы для экономии ресурсов организации. За годы практики мы уже не раз выполняли кейсы для наших клиентов/партнёров, которые помогли автоматизировать и оптимизировать ряд рабочих процессов в рамках рабочего функционала системы. </p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team" id="team">
+		<div class="team__size container">
+			<div class="team__bg"></div>
+
+			<div class="team__container">
+				<h2 class="h2 team__title">Наша команда</h2>
+
+				<div class="team__wrap">
+					<div class="team__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide team__slide">
+								<div class="team__img">
+									<img src="img/team1.jpg" alt="">
+								</div>
+								<p class="team__name">Михаил Шевелевич</p>
+								<p class="team__text">Руководитель проекта в компании 12 лет</p>
+							</div>
+
+							<div class="swiper-slide team__slide">
+								<div class="team__img">
+									<img src="img/team2.jpg" alt="">
+								</div>
+								<p class="team__name">Василий Шумилов</p>
+								<p class="team__text">Директор по развитию в компании 2 года</p>
+							</div>
+
+							<div class="swiper-slide team__slide">
+								<div class="team__img">
+									<img src="img/team3.jpg" alt="">
+								</div>
+								<p class="team__name">Семен Волконский</p>
+								<p class="team__text">QA-инженер</p>
+							</div>
+
+							<div class="swiper-slide team__slide">
+								<div class="team__img">
+									<img src="img/team4.jpg" alt="">
+								</div>
+								<p class="team__name">Ауналлах Аймен</p>
+								<p class="team__text">ВЕБ-рАЗРАБОТЧИК</p>
+							</div>
+
+							<div class="swiper-slide team__slide">
+								<div class="team__img">
+									<img src="img/team5.jpg" alt="">
+								</div>
+								<p class="team__name">Руслан Пахольчук</p>
+								<p class="team__text">Android разработчик</p>
+							</div>
+
+							<div class="swiper-slide team__slide">
+								<div class="team__img">
+									<img src="img/team6.jpg" alt="">
+								</div>
+								<p class="team__name">Влад Бойцов</p>
+								<p class="team__text">Android разработчик</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__pagination"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="calc">
+		<div class="container">
+			<h2 class="h2 calc__title">Калькулятор решений</h2>
+			<div class="row">
+				<div class="calc-fist-col col-lg col-md col-sm-12-col-xs-12">
+					<table class="calc-table">
+						<tbody><tr>
+							<td>Количество автомобилей</td>
+							<td>
+								<input class="input js-cars-num" type="number" value="1" min="1">
+							</td>
+						</tr>
+						<tr>
+							<td>Средний километраж за месяц</td>
+							<td>
+								<input class="input js-mileage" type="number" value="3000" min="1">
+							</td>
+						</tr>
+						<tr>
+							<td>Средний расход топлива, л/100км</td>
+							<td>
+								<input class="input js-fuel-cons" type="number" value="47" min="1">
+							</td>
+						</tr>
+						<tr>
+							<td>Тип транспортного средства</td>
+							<td>
+								<select class="select js-vehicle-type">
+									<option value="car">Легковой</option>
+									<option value="truck" selected="">Грузовой</option>
+								</select>
+								<span></span>
+							</td>
+						</tr>
+						<tr>
+							<td>Тип топлива</td>
+							<td>
+								<select class="select js-fuel-type">
+									<option value="diesel" selected="">Дизель</option>
+									<option value="petrol92">Бензин АИ-92</option>
+									<option value="petrol95">Бензин АИ-95</option>
+								</select>
+								<span></span>
+							</td>
+						</tr>
+						<tr>
+							<td>Стоимость топлива</td>
+							<td>
+								<input class="input js-fuel-cost" type="number" min="1">
+							</td>
+						</tr>
+					</tbody></table>
+					<button class="button button-default button-invert js-to-calc to-calc-button btn--calc">Рассчитать</button>
+				</div>
+				<div class="col-lg col-md col-sm-12-col-xs-12">
+					<h3 class="calc_title">Экономия за год составит</h3>
+					<p class="calc-economy">
+						<span class="number-of-calc-economy">242 850</span>
+						<span>руб.</span>
+					</p>
+					<p class="calc-playback">
+						<span>Окупаемость: </span>
+						<span class="calc-days">34</span>
+						<span> д.</span>
+					</p>
+					<button class="btn--eco button button-default button-invert js-button-start-saving" data-modal-trigger-open="start-saving-modal" style="display:none;">Заказать</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var costOfFuelType = {"diesel":"45","petrol92":"43.5","petrol95":"46.5"};
+		/* ]]> */
+	</script>
+
+	<section class="using">
+		<div class="container using__container">
+			<div class="using__size">
+				<h2 class="h2 using__title">Наши партнёры:</h2>
+				<div class="using__wrapp">
+					<div class="using__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide using__slide">
+								<img src="img/partner-1.png" alt="">
+							</div>
+							<div class="swiper-slide using__slide">
+								<img src="img/partner-2.png" alt="">
+							</div>
+							<div class="swiper-slide using__slide">
+								<img src="img/partner-3.png" alt="">
+							</div>
+							<div class="swiper-slide using__slide">
+								<img src="img/partner-4.png" alt="">
+							</div>
+							<div class="swiper-slide using__slide">
+								<img src="img/partner-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="using__pagination"></div>
+				</div>
+				<p class="using__subtitle">Используемые технологии</p>
+				<div class="using__wrap">
+					<div class="using__sliderbot">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide using__item">
+								<img src="img/tech1.png" alt="">
+							</div>
+		
+							<div class="swiper-slide using__item">
+								<img src="img/tech2.png" alt="">
+							</div>
+		
+							<div class="swiper-slide using__item">
+								<img src="img/tech3.png" alt="">
+							</div>
+		
+							<div class="swiper-slide using__item">
+								<img src="img/tech4.png" alt="">
+							</div>
+		
+							<div class="swiper-slide using__item">
+								<img src="img/tech5.png" alt="">
+							</div>
+		
+							<div class="swiper-slide using__item">
+								<img src="img/tech6.png" alt="">
+							</div>
+		
+							<div class="swiper-slide using__item">
+								<img src="img/tech7.png" alt="">
+							</div>
+	
+							<div class="swiper-slide using__item">
+								<img src="img/tech8.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="using__paginationbot"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__size">
+				<div class="footer__block">
+					<div class="footer__bank">
+						<div class="footer__img">
+							<img src="img/footer-1.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-2.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-3.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-4.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-5.png" alt="">
+						</div>
+					</div>
+					<div class="footer__list">
+						<a href="company.html">О компании</a>
+						<a href="#">Оферта</a>
+						<a href="confident.html">Политика конфиденциальности</a>
+					</div>
+				</div>
+				<div class="footer__block">
+					<div class="footer__info">
+						<div class="footer__contact">
+							<a href="mailto:info@skifapp.com">info@skifapp.com</a>
+							<a href="tel:+74994317000">+7 (499) 431-70-00</a>
+						</div>
+						<div class="footer__qr">
+							<img src="img/footer-qr.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="footer__block">
+					<div class="footer__place">
+						<p>Россия, г. Москва, 119415
+						<p>Ленинский пр-кт дом 116, корпус 1</p>
+						<p>помещение I</p>
+					</div>
+				</div>
+			</div>
+			<p class="footer__lower">
+				В случае перепечатки материалов с сайта, ссылка на источник — обязательна. © 2018-2021
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
