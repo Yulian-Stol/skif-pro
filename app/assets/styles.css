@@ -32,8 +32,8 @@ section.ekr-sticky .sticky--parent .parent--text .sticky--text {
 section.ekr-sticky .sticky--parent .parent--text .sticky--text::before {
 	content: "";
 	height: calc(100% + 35px);
-	width: 1.5px;
-	background-color: #3159EC;
+	width: 2px;
+	background-color: #918EFF;
 	position: absolute;
 	top: 34px;
 	z-index: 1;
@@ -47,17 +47,18 @@ section.ekr-sticky .sticky--parent .parent--text .sticky--text span.text--num {
 	z-index: 10;
 	left: -75px;
 	background-color: white;
-	border: 1px solid #3159EC;
+	border: 2px solid #918EFF;
 	color: black;
 	width: 35px;
 	height: 35px;
 	text-align: center;
 	border-radius: 100%;
-	line-height: 35px;
+	line-height: 32px;
 	transition: all .5s;
 }
 section.ekr-sticky .sticky--parent .parent--text .sticky--text.active span.text--num {
 	background-color: #3159EC;
+	border-color: #3159EC;
 	color: white;
 }
 section.ekr-sticky .sticky--parent .parent--text .sticky--text.text-four .button {
@@ -74,8 +75,8 @@ section.ekr-sticky .sticky--parent img {
 	visibility: hidden;
 }
 section.ekr-sticky .sticky--parent img.active {
-	display: block;
-	left: 0;
-	opacity: 1;
-	visibility: visible;
+	display: block ;
+	left: 0 ;
+	opacity: 1 ;
+	visibility: visible ;
 }

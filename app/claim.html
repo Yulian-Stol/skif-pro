@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Заява</title>
+	<meta name="description" content="#">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="img/favicon.ico">
+	<meta property="og:image" content="#">
+	<link rel="stylesheet" href="css/app.min.css?v=1">
+	<script src="js/app.min.js" defer></script>
+	<link rel="stylesheet" href="assets/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/jquery.maskedinput.min.js"></script>
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__size">
+			<div class="container header__container">
+				<a href="main.html" class="header__logo">
+					<img src="img/logo.svg" alt="">
+					<p>Работаем с 2013 года</p>
+				</a>
+				<button class="hamburger" type="button">
+					<span class="hamburger__item"></span>
+				</button>
+	
+				<div class="header__nav">
+	
+					<div class="header__item accordion">
+						<div class="header__title accordion__header">
+							<span class="hamburger__nav">
+								<p class="hamburger__nav_item"></p>
+							</span><p>О компании</p>
+						</div>
+	
+						<div class="header__list accordion__content">
+							<a href="main.html#team">Наша команда</a>
+							<a href="company.html">Контактная информация</a>
+							<a href="document.html">Сертификаты</a>
+							<a href="video.html">Видеоинструкция</a>
+						</div>
+					</div>
+
+					<div class="header__item accordion">
+						<div class="header__title accordion__header">
+							<span class="hamburger__nav">
+								<p class="hamburger__nav_item"></p>
+							</span><p>Области применения</p>
+						</div>
+	
+						<div class="header__list accordion__content">
+							<a href="technology-1.html">Сельское хозяйство</a>
+							<a href="technology-2.html">Грузоперевозки</a>
+							<a href="technology-4.html">Коммунальные службы</a>
+							<a href="technology-6.html">Строительство  и эксплуатация сооружений</a>
+							<a href="technology-5.html">Промышленные производства</a>
+							<a href="technology-3.html">Службы такси и каршеринг</a>
+							<a href="technology-7.html">Водный транспорт</a>
+							<a href="technology-8.html">Воздушный транспорт</a>
+							<a href="technology-9.html">Персональное использование</a>
+						</div>
+					</div>
+
+					<div class="header__item accordion">
+						<div class="header__title accordion__header">
+							<span class="hamburger__nav">
+								<p class="hamburger__nav_item"></p>
+							</span><p>Технологии</p>
+						</div>
+	
+						<div class="header__list accordion__content">
+							<a href="program.html">Доработка ПО</a>
+						</div>
+					</div>
+
+					<button class="btn btn--mobile">Демо-версия</button>
+
+				</div>
+	
+				<button class="btn btn--header">Демо-версия</button>
+			</div>
+		</div>
+	</header>
+
+	<section class="claim">
+		<div class="container_size claim__container">
+			<div class="size">
+				<h2 class="h2 claim__title">Заявка на подключение</h2>
+				<p class="claim__subtitle">*— поля обязательные для заполнения</p>
+			</div>
+			<div class="claim__contact">
+
+
+				<script type="text/javascript">jQuery(function($){$("#formPhone2").mask("+7 999 999 99 99");});</script>
+	
+				<form action="#" class="form" method="POST">
+					<div class="size">
+
+						<div class="claim__wrap">
+							<div class="form__item claim__form">
+								<label for="formName2" class="form__label">Имя и фамилия*</label>
+								<input id="formName2" type="text" name="name" placeholder="Введите имя" class="form__input _req">
+							</div>
+	
+							<div class="form__item claim__form">
+								<label for="formCompany" class="form__label">Компания*</label>
+								<input id="formCompany" type="text" name="name" placeholder="Введите название компании" class="form__input _req">
+							</div>
+	
+							<div class="form__item claim__form">
+								<label for="formMail2" class="form__label">Email*</label>
+								<input id="formMail2" type="email" name="mail" placeholder="@gmail.com" class="form__input _req _email">
+							</div>
+		
+							<div class="form__item claim__form">
+								<label for="formPhone2" class="form__label">Телефон</label>
+								<input id="formPhone2" type="tel" name="phone" placeholder="+7 ___ ___ __ __" class="form__input _req">
+							</div>
+		
+						</div>
+	
+						<hr>
+	
+						<div class="claim__wrapper">
+							<div class="claim__radio">
+								<p class="form__label">Цели приобретения SKIF.PRO*</p>
+								<div class="form__item claim__form">
+									<input type="radio" id="claimChoice1" name="radio" value="text" class="claim__radio_input">
+									<label for="contactChoice1">Нужен мониторинг собственного автопарка</label>
+								</div>
+								<div class="form__item claim__form">
+									<input type="radio" id="claimChoice2" name="radio" value="text" class="claim__radio_input">
+									<label for="contactChoice2">Хотите стать интегратором в сфере мониторинга</label>
+								</div>
+								<div class="form__item claim__form">
+									<input type="radio" id="claimChoice3" name="radio" value="text" class="claim__radio_input">
+									<label for="contactChoice3">Занимаетесь мониторингом, но хотите попробовать SKIF.PRO</label>
+								</div>
+							</div>
+							<div class="claim__radio_wrap">
+								<div class="form__item claim__form">
+									<label for="formCompany" class="form__label">Размер автопарка</label>
+									<input id="formCompany" type="text" name="name" placeholder="Количество ТС (только число)" class="form__input">
+								</div>
+	
+								<div class="form__item claim__form">
+									<label for="formCompany" class="form__label">Текущая система мониторинга, если используете</label>
+									<input id="formCompany" type="text" name="name" placeholder="Количество ТС (только число)" class="form__input">
+								</div>
+							</div>
+							<div class="claim__checkbox">
+								<p class="form__label">Задачи, которые планируете решить</p>
+								<div class="form__checkbox">
+									<input id="formCheckbox1" type="checkbox" name="checkbox" class="form__checkbox_input">
+									<label for="formCheckbox1" class="form__checkbox_label">Контроль топлива</label>
+								</div>
+								<div class="form__checkbox">
+									<input id="formCheckbox2" type="checkbox" name="checkbox" class="form__checkbox_input">
+									<label for="formCheckbox2" class="form__checkbox_label">Контроль качества вождения</label>
+								</div>
+								<div class="form__checkbox">
+									<input id="formCheckbox3" type="checkbox" name="checkbox" class="form__checkbox_input">
+									<label for="formCheckbox3" class="form__checkbox_label">Удалённая блокировка двигателя</label>
+								</div>
+								<div class="form__checkbox">
+									<input id="formCheckbox4" type="checkbox" name="checkbox" class="form__checkbox_input">
+									<label for="formCheckbox4" class="form__checkbox_label">Дополнительные датчики и телеметрия</label>
+								</div>
+							</div>
+							<div class="claim__textarea">
+								<p class="form__label">Комментарий</p>
+								<div class="form__item">
+									<label for="formMessage" class="form__label"></label>
+									<textarea id="formMessage" placeholder="Введите ваш комментарий" name="message" class="form__textarea"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="claim__banner">
+						<p>Предоставляем бесплатно 60-дневный период для ознакомления с нашей системой и начала<br> работы в ней, а также создадим один кастомизированный отчет под запрос клиента</p>
+
+					</div>
+					<div class="size claim__accept">
+						<div class="form__btn">
+							<button type="submit" class="btn btn--claim" name="submit">Оставить заявку</button>
+						</div>
+						<div class="form__item">
+							<div class="form__checkbox">
+								<input id="formAgreement3" type="checkbox" name="agree" class="form__checkbox_input _req">
+								<label for="formAgreement3" class="form__checkbox_label">Я ознакомлен с офертой и согласен на предоставление и обработку персональных данных</label>
+							</div>
+						</div>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__size">
+				<div class="footer__block">
+					<div class="footer__bank">
+						<div class="footer__img">
+							<img src="img/footer-1.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-2.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-3.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-4.png" alt="">
+						</div>
+						<div class="footer__img">
+							<img src="img/footer-5.png" alt="">
+						</div>
+					</div>
+					<div class="footer__list">
+						<a href="company.html">О компании</a>
+						<a href="oferta.html">Оферта</a>
+						<a href="confident.html">Политика конфиденциальности</a>
+					</div>
+				</div>
+				<div class="footer__block">
+					<div class="footer__info">
+						<div class="footer__contact">
+							<a href="mailto:info@skifapp.com">info@skifapp.com</a>
+							<a href="tel:+74994317000">+7 (499) 431-70-00</a>
+						</div>
+						<div class="footer__qr">
+							<img src="img/footer-qr.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="footer__block">
+					<div class="footer__place">
+						<p>Россия, г. Москва, 119415
+						<p>Ленинский пр-кт дом 116, корпус 1</p>
+						<p>помещение I</p>
+					</div>
+				</div>
+			</div>
+			<p class="footer__lower">
+				В случае перепечатки материалов с сайта, ссылка на источник — обязательна. © 2018-2021
+			</p>
+		</div>
+	</footer>
+
+</body>
+</html>
