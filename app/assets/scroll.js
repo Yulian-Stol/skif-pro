@@ -9,12 +9,12 @@ if (document.documentElement.clientWidth > 1200) {
 				var winTop = $(this).scrollTop(),
 						wp1 = 0,
 						wp2 = 1200,
-						wp3 = 1800,
-						wp4 = 2400;
-						wp5 = 3000;
-						wp6 = 3600;
-						wp7 = 4200;
-						wp8 = 4800;
+						wp3 = 1300,
+						wp4 = 1400;
+						wp5 = 1500;
+						wp6 = 1600;
+						wp7 = 1700;
+						wp8 = 1800;
 	
 				var textOne = $('.text-one');
 				var textTwo = $('.text-two');

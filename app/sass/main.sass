@@ -3,36 +3,9 @@
 // -----CONTAINER-----
 .container
 	width: 100%
-	max-width: 1760px
+	max-width: 1210px
 	padding: 0 15px
 	margin: 0 auto
-
-	+r(1780)
-		max-width: 1500px
-
-	+r(1500)
-		max-width: 1200px
-
-	+r(1200)
-		max-width: 992px
-
-	+r(992)
-		max-width: 768px
-
-	+r(767)
-		max-width: 576px
-
-	+r(576)
-		max-width: 480px
-
-.container_size
-	width: 100%
-	max-width: 1460px
-	padding: 0 15px
-	margin: 0 auto
-
-	+r(1500)
-		max-width: 1200px
 
 	+r(1200)
 		max-width: 992px
@@ -48,7 +21,7 @@
 
 .size
 	width: 100%
-	max-width: 1200px
+	max-width: 1600px
 	margin: 0 auto
 // -----BUTTON-----
 .btn
@@ -111,6 +84,7 @@
 		height: 60px
 		background-color: #3159EC
 		border: 3px solid #3159EC
+		border-radius: 5px
 
 		+r(1200)
 			max-width: 1000px
@@ -119,35 +93,33 @@
 	&--claim
 		max-width: 360px
 		width: 360px
-		height: 80px
+		height: 60px
 		background-color: #3159EC
 		border: 3px solid #3159EC
-		font-size: 24px
 		border-radius: 5px
 		font-weight: 500
 
 		+r(992)
-			height: 60px
 			max-width: 100%
 			margin: 0 auto
-			font-size: 18px
 
 	&--calc
 		border: 3px solid #3159EC
 		border-radius: 5px
-		max-width: 370px
+		max-width: 365px
 		width: 100%
-		height: 80px
+		height: 55px
 		background: transparent
-		font-size: 24px
 		display: flex
 		justify-content: center
 		align-items: center
 		margin-left: auto
 
 		+r(767)
+			margin-left: 0
+
+		+r(576)
 			max-width: 100%
-			height: 60px
 
 		&:hover
 			border: 3px solid #2564C1
@@ -162,26 +134,30 @@
 	&--eco
 		border: 3px solid #3159EC
 		border-radius: 5px
-		max-width: 370px
+		max-width: 365px
 		width: 100%
-		height: 80px
+		height: 55px
 		background: #3159EC
-		font-size: 24px
 		display: flex
 		justify-content: center
 		align-items: center
 		color: #fff
-		margin-top: 348px
+		margin-top: 315px
+
+		+r(1500)
+			margin-top: 348px
 
 		+r(1200)
 			margin-top: 238px
 
 		+r(992)
-			margin-top: 273px
+			margin-top: 263px
 
 		+r(767)
 			margin-top: 15px
-			height: 60px
+
+		+r(576)
+			max-width: 100%
 
 		&:hover
 			border: 3px solid #2564C1
@@ -196,11 +172,13 @@
 	&--place
 		background: #3159EC
 		border-color: #3159EC
-		padding: 10px 50px
-		font-size: 24px
-		height: 80px
+		padding: 10px 70px
+		height: 60px
 		font-weight: 500
 		border-radius: 5px
+
+		+r(767)
+			padding: 10px
 
 		+r(576)
 			max-width: 100%
@@ -227,27 +205,24 @@
 
 .h2
 	font-family: $f_title
-	font-size: 42px
+	font-size: 32px
 
 	+r(1200)
-		font-size: 35px
+		font-size: 30px
 
 	+r(992)
-		font-size: 30px
+		font-size: 25px
 
 	+r(767)
 		font-size: 22px
 
 .h3
-	font-size: 50px
+	font-size: 32px
 	font-family: $f_subtitle
 	font-weight: 700
 	color: $text
-	margin-bottom: 35px
+	margin-bottom: 25px
 	z-index: 10
-
-	+r(1200)
-		font-size: 40px
 
 	+r(992)
 		font-size: 28px
@@ -680,11 +655,15 @@ body
 
 .example
 	background: linear-gradient(90.03deg, #EDEFF5 -12.95%, #F7F6F7 40.25%, #EAF0F4 101.81%)
-	padding-top: 50px
-	padding-bottom: 140px
+	padding-top: 130px
+	padding-bottom: 280px
 
 	+r(992)
 		padding-bottom: 110px
+		padding-top: 50px
+
+	&__wrap
+		position: relative
 
 	&__title
 		text-align: center
@@ -693,16 +672,7 @@ body
 		+r(992)
 			margin-bottom: 45px
 
-	&__wrap
-		position: relative
-		max-width: 1050px
-		width: 100%
-		margin: 0 auto
-
 	&__block
-		max-width: 485px
-		width: 100%
-		margin: auto
 
 		img
 			margin-bottom: 30px
@@ -755,31 +725,30 @@ body
 			border-radius: 0 !important
 
 .contact
-	padding-top: 70px
-	padding-bottom: 120px
+	padding-top: 50px
+	padding-bottom: 80px
 	background-image: url(../img/form.jpg)
 	background-attachment: fixed
 	position: relative
 	+cover
 
 	+r(992)
-		padding-top: 50px
 		padding-bottom: 60px
 
 	&__title
 		color: #fff
 		text-align: center
-		margin-bottom: 100px
+		margin-bottom: 60px
 
 		+r(992)
 			margin-bottom: 45px
 
 	&__img
 		position: absolute
-		right: 200px
+		right: 180px
 		top: -65px
-		width: 190px
-		height: 190px
+		width: 165px
+		height: 165px
 
 		+r(1200)
 			width: 150px
@@ -800,34 +769,15 @@ body
 
 	&--border
 		border: none
-		height: 80px !important
-
-		+r(992)
-			height: 60px !important
-
-	&--btn
-		height: 80px
-
-		+r(992)
-			height: 60px !important
 
 .advantages
 	background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FDFDFD
 	background-blend-mode: soft-light, normal
-
-	&__size
-		padding-top: 105px
-		padding-bottom: 70px
-		max-width: 1220px
-		width: 100%
-		margin: 0 auto
-
-		+r(992)
-			padding-top: 50px
-			padding-bottom: 50px
+	padding-top: 130px
+	padding-bottom: 100px
 
 	&__title
-		margin-bottom: 70px
+		margin-bottom: 60px
 
 		+r(992)
 			margin-bottom: 40px
@@ -839,13 +789,13 @@ body
 	&__item
 		display: flex
 		align-items: center
-		gap: 70px
+		gap: 45px
 		max-width: 760px
 		width: fit-content
 		margin-bottom: 30px
 
 		+r(992)
-			gap: 50px
+			gap: 40px
 
 		+r(767)
 			gap: 30px
@@ -865,7 +815,7 @@ body
 				display: none
 
 		&_title
-			margin-bottom: 20px
+			margin-bottom: 10px
 			font-size: 24px
 			font-weight: 600
 
@@ -874,7 +824,6 @@ body
 
 			+r(576)
 				font-size: 17px
-				margin-bottom: 10px
 
 			br
 				+r(767)
@@ -882,8 +831,8 @@ body
 
 	&__img
 		position: relative
-		width: 122px
-		height: 122px
+		width: 92px
+		height: 92px
 		flex-shrink: 0
 
 		+r(576)
@@ -901,14 +850,14 @@ body
 		&::after
 			content: " "
 			display: block
-			width: 137px
-			height: 131px
+			width: 100px
+			height: 100px
 			background: #EFF9FF
 			position: absolute
 			border-radius: 50%
 			z-index: 1
-			left: -20px
-			top: 20px
+			left: -15px
+			top: 15px
 
 			+r(576)
 				width: 50px
@@ -917,13 +866,9 @@ body
 				left: 10px
 
 .selectus
-	padding-top: 45px
-	padding-bottom: 95px
-	padding-left: 10px
-	padding-right: 10px
+	padding: 120px 10px
 	position: relative
 	background-image: url(../img/blur.png)
-	background-repeat: no-repeat
 	background-position: bottom
 
 	+r(767)
@@ -941,9 +886,6 @@ body
 			flex-direction: column
 
 	&__size
-		max-width: 1620px
-		width: 100%
-		margin: 0 auto
 		background: #fff
 		border-radius: 10px
 		z-index: 100
@@ -1030,10 +972,7 @@ body
 
 	&__size
 		background: linear-gradient(90.03deg, #EDEFF5 -12.95%, #F7F6F7 40.25%, #EAF0F4 101.81%)
-		max-width: 1450px
-		width: 100%
-		margin: 0 auto
-		padding: 80px 115px
+		padding: 130px
 
 		+r(1500)
 			padding: 80px 0
@@ -1042,7 +981,7 @@ body
 			padding: 50px 0
 
 	&__title
-		margin-bottom: 80px
+		margin-bottom: 60px
 
 		+r(1200)
 			text-align: center
@@ -1063,8 +1002,8 @@ body
 						+scale(1.1)
 
 	&__img
-		width: 355px
-		height: 240px
+		width: 300px
+		height: 180px
 		margin-bottom: 15px
 		display: block
 		overflow: hidden
@@ -1099,12 +1038,9 @@ body
 			flex-direction: column
 
 	&__text
-		font-size: 24px
+		font-size: 18px
 		font-weight: 600
 		color: $text
-
-		+r(992)
-			font-size: 20px
 
 .test
 
@@ -1113,7 +1049,7 @@ body
 		max-width: 1450px
 		width: 100%
 		margin: 0 auto
-		padding: 185px 185px
+		padding: 150px
 		position: relative
 
 		+r(1500)
@@ -1125,15 +1061,8 @@ body
 	&__wrap
 		position: absolute
 		top: 50px
-		right: -80px
-		left: 60px
-
-		+r(1860)
-			right: -40px
-			left: 30px
-
-		+r(1800)
-			right: 110px
+		right: 145px
+		left: 200px
 
 		+r(1500)
 			position: static
@@ -1141,7 +1070,7 @@ body
 	&__block
 		background: #FFFFFF
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-		padding: 25px 0 25px 160px
+		padding: 40px
 		position: relative
 
 		+r(1800)
@@ -1160,8 +1089,8 @@ body
 			top: 0
 			width: 0
 			height: 0
-			border-top: 197px solid #FFFFFF
-			border-right: 120px solid transparent
+			border-top: 201px solid #FFFFFF
+			border-right: 121px solid transparent
 
 			+r(1500)
 				display: none
@@ -1170,11 +1099,8 @@ body
 		font-weight: 700
 		color: #00A3FF
 		margin-bottom: 25px
-		font-size: 40px
+		font-size: 32px
 		text-transform: uppercase
-
-		+r(1200)
-			font-size: 35px
 
 		+r(992)
 			font-size: 28px
@@ -1184,10 +1110,7 @@ body
 			font-size: 18px
 
 	&__text
-		font-size: 24px
-
-		+r(992)
-			font-size: 20px
+		font-size: 18px
 
 		+r(767)
 			font-size: 14px
@@ -1200,16 +1123,11 @@ body
 		padding-top: 50px
 		padding-bottom: 30px
 
-	&__size
-		max-width: 1220px
-		width: 100%
-		margin: 0 auto
-
 	&__row
 		display: flex
 		align-items: center
 		justify-content: space-between
-		margin-bottom: 60px
+		margin-bottom: 50px
 
 		+r(767)
 			justify-content: center
@@ -1218,11 +1136,8 @@ body
 			margin-bottom: 40px
 
 		a
-			font-size: 28px
+			font-size: 18px
 			text-decoration: underline
-
-			+r(992)
-				font-size: 20px
 
 	&__subtitle
 		margin-bottom: 25px
@@ -1262,6 +1177,18 @@ body
 		&_another
 			max-width: 520px
 			width: 100%
+			
+			.technology__arch
+				padding-bottom: 46px
+
+				+r(1200)
+					padding-bottom: 10px
+
+				+r(992)
+					padding-bottom: 15px
+
+				+r(767)
+					padding-bottom: 0
 
 	&__security
 		border: 2px solid #EAEBF0
@@ -1286,7 +1213,7 @@ body
 		&_title
 			padding: 30px 35px 20px 35px
 			font-family: $f_title
-			font-size: 24px
+			font-size: 20px
 			background: linear-gradient(261.46deg, #CCEAFF 21.87%, #EEFFFF 54.61%, #D0EBFF 81.74%)
 
 			+r(992)
@@ -1294,12 +1221,13 @@ body
 				padding: 15px
 
 		&_text
-			font-size: 17px
-			padding: 55px 35px
+			font-size: 18px
+			padding: 25px 35px 25px 35px
 
 			+r(992)
 				font-size: 14px
 				padding: 15px
+
 
 	&--bg
 		background: linear-gradient(90.03deg, #EDEFF5 -12.95%, #F7F6F7 40.25%, #EAF0F4 101.81%)
@@ -1309,11 +1237,16 @@ body
 
 .calc
 	background: linear-gradient(90.03deg, #EDEFF5 -12.95%, #F7F6F7 40.25%, #EAF0F4 101.81%)
-	padding-top: 100px
-	padding-bottom: 100px
+	padding-top: 130px
+	padding-bottom: 60px
 
 	+r(992)
 		padding: 50px 0
+
+	&__size
+		background: #FFFFFF
+		box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07)
+		border-radius: 8px
 
 	&__title
 		margin-bottom: 60px
@@ -1323,7 +1256,7 @@ body
 			margin-bottom: 20px
 
 	td
-		font-size: 22px
+		font-size: 20px
 		position: relative
 
 		+r(992)
@@ -1388,9 +1321,9 @@ body
 		justify-content: space-between
 		align-items: center
 		gap: 40px
-		margin-bottom: 45px
+		margin-bottom: 35px
 		&:last-child
-			margin-bottom: 80px
+			margin-bottom: 60px
 
 			+r(1200)
 				margin-bottom: 30px
@@ -1409,7 +1342,7 @@ body
 
 	&_title
 		font-weight: 700
-		font-size: 40px
+		font-size: 34px
 		margin-bottom: 65px
 		margin-top: 50px
 
@@ -1426,12 +1359,12 @@ body
 
 	&-economy
 		color: #3159EC
-		font-size: 90px
+		font-size: 60px
 		font-weight: 700
 		margin-bottom: 25px
 
 		+r(1500)
-			font-size: 60px
+			font-size: 50px
 
 		+r(1200)
 			font-size: 45px
@@ -1441,10 +1374,7 @@ body
 			margin-bottom: 20px
 
 	&-playback
-		font-size: 24px
-
-		+r(576)
-			font-size: 20px
+		font-size: 20px
 
 	&-days
 		color: #3159EC
@@ -1454,16 +1384,10 @@ body
 			width: 100%
 
 .row
-	background: #FFFFFF
-	box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07)
-	border-radius: 8px
-	padding: 70px 200px
 	display: flex
-	justify-content: space-between
+	justify-content: space-around
 	gap: 50px
-
-	+r(1780)
-		padding: 50px
+	padding: 60px 0
 
 	+r(767)
 		flex-direction: column
@@ -1474,36 +1398,42 @@ body
 		padding: 30px 20px
 
 .team
-	padding-bottom: 190px
-	padding-top: 50px
+	padding-bottom: 240px
+	padding-top: 130px
 	position: relative
 	overflow: hidden
+
+	+r(1200)
+		padding-bottom: 120px
+		padding-top: 80px
 
 	&__bg
 		&::before
 			content: " "
 			width: 90%
-			height: 405px
+			height: 345px
 			display: block
 			position: absolute
 			background: linear-gradient(229.5deg, #E1E7FF -17.08%, #D7FDFF 51.52%, #CECAFF 120.12%)
 			border-radius: 3px
-			bottom: 100px
-			margin-left: 10%
+			bottom: 75px
+			left: 200px
 
-			+r(992)
-				margin-left: -15px
+			+r(1200)
+				left: 0
 				width: 100%
+				bottom: 0
+
 
 	&__title
 		text-align: center
-		margin-bottom: 75px
+		margin-bottom: 60px
 
 	&__slide
 		background: linear-gradient(315deg, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FDFDFD
 		background-blend-mode: soft-light, normal
 		border-radius: 20px
-		padding: 25px 30px
+		padding: 15px
 		display: flex
 		justify-content: flex-start
 		flex-direction: column
@@ -1527,11 +1457,10 @@ body
 
 	&__name
 		margin-bottom: 10px
-		font-size: 28px
+		font-size: 20px
 		font-weight: 600
 
 		+r(992)
-			font-size: 22px
 			margin-bottom: 5px
 
 		+r(576)
@@ -1539,7 +1468,7 @@ body
 
 	&__text
 		text-transform: uppercase
-		font-size: 20px
+		font-size: 18px
 		color: #373434
 		font-weight: 400
 
@@ -1582,36 +1511,28 @@ body
 
 .using
 	background: #fff
-	padding-bottom: 130px
+	padding-bottom: 120px
 
 	+r(767)
 		background: linear-gradient(90.03deg, #EDEFF5 -12.95%, #F7F6F7 40.25%, #EAF0F4 101.81%)
+		padding-bottom: 60px
 
-	&__container
+	&__size
 		background: linear-gradient(90.03deg, #EDEFF5 -12.95%, #F7F6F7 40.25%, #EAF0F4 101.81%)
+		padding-top: 130px
+		padding-bottom: 100px
 
 		+r(767)
 			background: transparent
-
-	&__size
-		padding: 90px 230px 140px 230px
-
-		+r(1780)
-			padding: 90px
-
-		+r(1200)
-			padding: 40px
-
-		+r(767)
-			padding: 0
+			padding-top: 50px
 
 	&__subtitle
 		text-align: center
 		font-size: 28px
-		margin-bottom: 60px
+		margin-bottom: 40px
 
 	&__title
-		margin-bottom: 90px
+		margin-bottom: 60px
 		text-align: center
 
 	&__slide
@@ -1638,7 +1559,7 @@ body
 		max-width: 1200px
 		width: 100%
 		margin: 0 auto
-		margin-bottom: 180px
+		margin-bottom: 150px
 
 	&__wrap
 		position: relative
@@ -1694,7 +1615,7 @@ body
 			max-height: 100%
 			object-fit: scale-down
 
-		+r(767)
+		+r(992)
 			height: calc((100% - 30px) / 2) !important
 			box-shadow: 0 0 0
 
@@ -1704,7 +1625,7 @@ body
 		gap: 40px
 		justify-content: center
 
-		+r(767)
+		+r(992)
 			display: block
 			overflow: hidden
 			height: 215px
@@ -1712,16 +1633,16 @@ body
 		.swiper-slide
 			width: 210px
 
-			+r(767)
+			+r(992)
 				width: 100%
 
 		.swiper-wrapper
 			display: flex
 			flex-wrap: wrap
-			gap: 35px
+			gap: 30px
 			justify-content: center
 
-			+r(767)
+			+r(992)
 				display: 
 				gap: 0
 
@@ -1756,16 +1677,15 @@ body
 	box-shadow: 0px -10px 20px rgba(41, 41, 42, 0.07)
 
 	&__size
-		padding: 25px 50px 45px 50px
+		padding: 30px 0
 		display: flex
 		justify-content: space-between
-		gap: 130px
+		gap: 30px
 		position: relative
 		flex-wrap: wrap
 
-		+r(1500)
-			padding: 25px 0 45px 0
-			gap: 50px
+		+r(992)
+			justify-content: space-around
 
 		+r(576)
 			gap: 25px
@@ -1781,29 +1701,42 @@ body
 		+r(1500)
 			gap: 20px
 
-		+r(380)
-			flex-direction: column
+		+r(992)
+			gap: 10px
+
+		+r(767)
+			align-items: center
 
 	&__bank
 		display: flex
-		max-width: 220px
+		width: 120px
 		flex-wrap: wrap
 		gap: 15px
 		align-items: center
+		justify-content: center
+		height: 115px
 
 		+r(992)
-			max-width: 185px
-			width: 185px
 			flex-shrink: 0
+			height: 95px
+
+		+r(767)
+			height: 115px
+
+	&__img
+		width: 42px
+
+		&:last-child
+			width: 110px
 
 		img
-			+r(992)
-				width: 75%
+			width: 100%
+			height: auto
 
 	&__list
 		display: flex
 		flex-direction: column
-		gap: 25px
+		gap: 15px
 
 		+r(576)
 			gap: 15px
@@ -1837,21 +1770,20 @@ body
 			gap: 15px
 
 	&__place
-		font-size: 20px
 		font-weight: 600
 		line-height: 170%
 		text-align: right
-
-		+r(1200)
-			text-align: left
 
 		+r(992)
 			font-size: 13px
 
 		+r(767)
+			text-align: center
+
+		+r(576)
 			text-align: right
 
-		+r(380)
+		+r(375)
 			text-align: center
 
 	&__lower
@@ -1863,7 +1795,7 @@ body
 			font-size: 14px
 
 	&__qr
-		width: 230px
+		width: 190px
 		+r(992)
 			width: 110px
 
@@ -1907,7 +1839,7 @@ body
 		
 
 	img
-		max-width: 550px !important
+		max-width: 700px !important
 
 		+r(1200)
 			left: 0 !important
@@ -1936,7 +1868,7 @@ body
 	border-radius: 10px
 	display: flex
 	flex-direction: column
-	gap: 40px
+	gap: 30px
 
 	+r(1200)
 		max-width: 540px !important
@@ -1956,26 +1888,22 @@ body
 
 .text--title
 	margin-bottom: 0 !important
-	font-size: 28px !important
-
-	+r(1200)
-		font-size: 24px !important
+	font-size: 18px !important
 
 	+r(767)
 		font-size: 20px !important
 
 .ekr-sticky
+	height: 220vh !important
+
+	+r(1500)
+		height: 250vh !important
+
 	+r(1200)
 		height: 100% !important
 
 	+r(992)
 		padding: 40px 0!important
-
-	&__container
-		padding: 0 280px
-
-		+r(1780)
-			padding: 0 15px
 
 	&__title
 		+r(1200)
@@ -1996,10 +1924,10 @@ body
 			align-items: center
 			padding-top: 50px
 			position: absolute
-			bottom: 18%
+			bottom: 15%
 
 			+r(1200)
-				bottom: 15%
+				bottom: 10%
 
 			+r(992)
 				position: static
@@ -2029,6 +1957,7 @@ body
 		margin-bottom: 35px
 		font-family: $f_subtitle
 		font-weight: 700
+		text-align: center
 
 		+r(767)
 			font-size: 28px
@@ -2036,10 +1965,11 @@ body
 			margin-bottom: 25px
 
 	&__text
-		margin-bottom: 80px
-		font-size: 24px
+		margin-bottom: 60px
+		font-size: 18px
 		font-weight: 400
 		font-family: $f_subtitle
+		text-align: center
 
 		+r(992)
 			font-size: 17px
@@ -2048,20 +1978,21 @@ body
 		+r(767)
 			text-align: center
 
-	&__container
+	&__size
 		background: #FFFFFF
 		box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07)
 		border-radius: 8px
-		padding: 40px 65px
+		padding: 35px 0
 		margin-bottom: 35px
+		max-width: 1400px
 
 		+r(992)
 			padding: 35px 20px
 
 	&__subtitle
-		margin-bottom: 50px
+		margin-bottom: 40px
 		font-weight: 700
-		font-size: 34px
+		font-size: 32px
 
 		+r(767)
 			font-size: 24px
@@ -2071,20 +2002,17 @@ body
 		display: flex
 		align-items: center
 		gap: 20px
-		font-size: 30px
+		font-size: 20px
 		color: #3159EC
 		font-weight: 700
 		cursor: pointer
-
-		+r(992)
-			font-size: 25px
 
 		+r(767)
 			font-size: 18px
 			gap: 15px
 
 		a
-			font-size: 30px
+			font-size: 20px
 			color: #3159EC
 			font-weight: 700
 			text-decoration: underline
@@ -2099,18 +2027,20 @@ body
 			text-decoration: underline
 
 		span
-			border-top: 4px solid #3159EC
-			border-left: 4px solid #3159EC
+			border-top: 3px solid #3159EC
+			border-left: 3px solid #3159EC
 			margin-bottom: 10px
 			border-radius: 2px
-			width: 18px
-			height: 18px
+			width: 14px
+			height: 14px
 			display: block
 			flex-shrink: 0
 			+rotate(-135)
 			+transition
 
 		img
+			width: 25px
+			height: 30px
 			+r(767)
 				width: 22px
 				height: 30px
@@ -2131,7 +2061,7 @@ body
 	&__list
 		display: flex
 		flex-direction: column
-		gap: 35px
+		gap: 30px
 
 		.accordion--active
 			span
@@ -2187,6 +2117,7 @@ body
 		margin-bottom: 35px
 		font-family: $f_subtitle
 		font-weight: 700
+		text-align: center
 
 		+r(767)
 			font-size: 28px
@@ -2195,16 +2126,14 @@ body
 
 	&__text
 		margin-bottom: 80px
-		font-size: 24px
+		font-size: 18px
 		font-weight: 400
 		font-family: $f_subtitle
+		text-align: center
 
 		+r(992)
 			font-size: 17px
 			margin-bottom: 50px
-
-		+r(767)
-			text-align: center
 
 	&__container
 		padding: 0 65px
@@ -2257,48 +2186,45 @@ body
 		padding-top: 200px
 		padding-bottom: 100px
 
-	&__container
-		padding: 0 65px
-
-		+r(1500)
-			padding: 0 15px
-
 	&__title
-		margin-bottom: 80px
+		margin-bottom: 40px
 		font-family: $f_subtitle
 		font-weight: 700
+		text-align: center
 
 		+r(767)
 			font-size: 28px
-			text-align: center
 			margin-bottom: 25px
 
 	&__text
-		font-size: 26px
-		margin-bottom: 50px
+		margin-bottom: 20px
 
 		+r(992)
 			font-size: 17px
 			margin-bottom: 50px
 
 	&__subtitle
-		margin-bottom: 50px
+		margin-bottom: 40px
+		padding-top: 60px
+		text-align: center
 		font-weight: 700
-		font-size: 34px
+		font-size: 32px
 
 		+r(767)
 			font-size: 24px
 			margin-bottom: 30px
+			padding-top: 0
+			text-align: left
 
 	iframe
-		margin-bottom: 50px
+		margin-bottom: 40px
 
 		+r(992)
 			margin-bottom: 25px
 			height: 370px
 
 	&__contact
-		font-size: 24px
+		font-size: 18px
 		font-weight: 400
 		margin-bottom: 15px
 
@@ -2312,10 +2238,7 @@ body
 			color: $text
 
 	&__margin
-		margin-bottom: 80px
-
-		+r(992)
-			margin-bottom: 40px
+		margin-bottom: 20px
 
 	&__list
 		display: flex
@@ -2349,32 +2272,30 @@ body
 
 	&__title
 		text-align: center
-		font-size: 60px
+		font-size: 32px
 		font-weight: 700
 		margin-bottom: 35px
-
-		+r(1200)
-			font-size: 40px
 
 		+r(992)
 			font-size: 28px
 
 	&__subtitle
-		font-size: 24px
+		font-size: 18px
 		color: #000
 		text-align: center
-		margin-bottom: 40px
+		margin-bottom: 60px
 
 		+r(992)
 			font-size: 17px
+			margin-bottom: 40px
 
 	&__item
-		max-width: 1000px
-		padding: 35px 80px
+		max-width: 900px
+		padding: 35px 45px
 		background: #FFFFFF
 		box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07)
 		border-radius: 8px
-		margin-bottom: 40px
+		margin-bottom: 25px
 
 		+r(1200)
 			padding: 30px 15px
@@ -2382,7 +2303,6 @@ body
 
 		+r(992)
 			max-width: 500px
-			margin-bottom: 30px
 
 		&:nth-child(2n)
 			text-align: right
@@ -2390,7 +2310,7 @@ body
 			margin-left: auto
 
 		&:last-child
-			margin-bottom: 100px
+			margin-bottom: 60px
 
 			+r(1200)
 				margin-bottom: 50px
@@ -2398,7 +2318,7 @@ body
 		&_title
 			font-family: $f_subtitle
 			color: $accent
-			font-size: 34px
+			font-size: 32px
 			margin-bottom: 10px
 			font-weight: 700
 
@@ -2411,10 +2331,7 @@ body
 
 		&_text
 			color: #000
-			font-size: 24px
-
-			+r(1200)
-				font-size: 20px
+			font-size: 18px
 
 			+r(992)
 				font-size: 14px
@@ -2424,29 +2341,24 @@ body
 		font-weight: 700
 		font-family: $f_subtitle
 		text-align: center
-		font-size: 34px
-		margin-bottom: 35px
+		font-size: 32px
+		margin-bottom: 25px
 
 		+r(1200)
 			font-size: 25px
-			margin-bottom: 25px
 
 		+r(992)
 			font-size: 18px
 
 	&__text
 		font-weight: 600
-		font-size: 24px
-		margin-bottom: 100px
+		font-size: 18px
+		margin-bottom: 40px
 		text-align: center
 		color: #000
 
-		+r(1200)
-			font-size: 20px
-
 		+r(992)
 			font-size: 14px
-			margin-bottom: 60px
 
 		br
 			+r(992)
@@ -2457,24 +2369,20 @@ body
 
 	&__footer
 		color: #000
-		font-size: 24px
+		font-size: 18px
 		font-weight: 400
 		text-align: center
-		margin-bottom: 50px
-
-		+r(1200)
-			font-size: 20px
+		margin-bottom: 25px
 
 		+r(992)
 			font-size: 14px
-			margin-bottom: 30px
 			text-align: center
 
 		span
 			color: $accent
 			font-weight: 700
 			font-family: $f_subtitle
-			font-size: 34px
+			font-size: 32px
 
 			+r(1200)
 				font-size: 25px
@@ -2490,10 +2398,7 @@ body
 
 	&__contact
 		text-align: center
-		font-size: 24px
-
-		+r(1200)
-			font-size: 20px
+		font-size: 18px
 
 		+r(992)
 			font-size: 14px
@@ -2504,7 +2409,7 @@ body
 			text-decoration: underline
 //----page---place---
 .place
-	padding-top: 300px
+	padding-top: 270px
 	padding-bottom: 130px
 
 	+r(992)
@@ -2518,9 +2423,9 @@ body
 			padding: 0 15px
 
 	&__img
-		height: 550px
+		height: 460px
 		width: 100%
-		margin-bottom: 80px
+		margin-bottom: 60px
 
 		+r(1200)
 			height: 310px
@@ -2532,7 +2437,7 @@ body
 			object-fit: cover
 
 	&__text
-		font-size: 24px
+		font-size: 18px
 		opacity: 0.8
 		margin-bottom: 50px
 
@@ -2540,15 +2445,11 @@ body
 			font-size: 16px
 
 .power
-	padding-top: 100px
-	padding-bottom: 200px
+	padding-top: 60px
+	padding-bottom: 60px
 	background: #E8E8E8
 	box-shadow: 0px 4px 16px rgba(124, 124, 124, 0.36)
 	position: relative
-
-	+r(1200)
-		padding-top: 70px
-		padding-bottom: 90px
 
 	&::after
 		content: " "
@@ -2556,11 +2457,11 @@ body
 		left: 0
 		top: 0
 		z-index: 1
-		border-top: 300px solid #DCDCDC
+		border-top: 150px solid #DCDCDC
 		border-right: 550px solid transparent
 
 		+r(1200)
-			border-top: 150px solid #DCDCDC
+			border-top: 125px solid #DCDCDC
 			border-right: 275px solid transparent
 
 		+r(767)
@@ -2573,11 +2474,11 @@ body
 		right: 0
 		bottom: 0
 		z-index: 1
-		border-bottom: 300px solid #DCDCDC
+		border-bottom: 150px solid #DCDCDC
 		border-left: 550px solid transparent
 
 		+r(1200)
-			border-bottom: 150px solid #DCDCDC
+			border-bottom: 125px solid #DCDCDC
 			border-left: 275px solid transparent
 
 		+r(767)
@@ -2599,15 +2500,9 @@ body
 		.power__title
 			color: #fff
 
-	&__container
-		padding: 0 50px
-
-		+r(1500)
-			padding: 0 15px
-
 	&__title
 		text-align: center
-		margin-bottom: 120px
+		margin-bottom: 40px
 		z-index: 10
 
 		+r(1200)
@@ -2615,7 +2510,7 @@ body
 
 	&__item
 		display: flex
-		gap: 40px
+		gap: 20px
 		align-items: center
 		z-index: 10
 
@@ -2623,11 +2518,10 @@ body
 			gap: 25px
 
 		img
-			+r(1200)
-				width: 26px
+			width: 24px
 
 	&__text
-		font-size: 22px
+		font-size: 18px
 
 		+r(1200)
 			font-size: 16px
@@ -2637,8 +2531,8 @@ body
 		grid-template-columns: 1fr 1fr 1fr
 		grid-auto-rows: 1fr
 		justify-content: center
-		grid-column-gap: 80px
-		grid-row-gap: 60px
+		grid-column-gap: 45px
+		grid-row-gap: 50px
 
 		+r(1500)
 			grid-column-gap: 30px
@@ -2655,14 +2549,7 @@ body
 	&__page
 		color: #3159EC
 
-	&__container
-		padding: 0 50px
-
-		+r(1500)
-			padding: 0 15px
-
 	&__place
-		justify-content: flex-start
 
 		+r(576)
 			.area__img
@@ -2674,8 +2561,8 @@ body
 					display: none
 
 	&--padding
-		padding-top: 180px
-		padding-bottom: 200px
+		padding-top: 100px
+		padding-bottom: 150px
 
 		+r(992)
 			padding-top: 90px
@@ -2753,29 +2640,16 @@ body
 		padding-top: 200px
 		padding-bottom: 100px
 
-	.size
-		+r(1500)
-			padding: 0 60px
-
-		+r(992)
-			padding: 0 30px
-
-		+r(576)
-			padding: 0 20px
-
-	.container_size
-		+r(576)
-			padding: 0
-
 	&__container
 		+r(576)
 			max-width: 100%
 			margin: 0
 
 	&__title
-		margin-bottom: 45px
+		margin-bottom: 40px
 		font-family: $f_subtitle
 		font-weight: 700
+		text-align: center
 
 		+r(767)
 			font-size: 28px
@@ -2783,12 +2657,12 @@ body
 			margin-bottom: 25px
 
 	&__subtitle
-		margin-bottom: 80px
+		margin-bottom: 60px
 		opacity: 0.8
-		font-size: 24px
+		font-size: 18px
+		text-align: center
 
 		+r(767)
-			text-align: center
 			font-size: 17px
 
 	&__wrap
@@ -2796,10 +2670,12 @@ body
 		grid-template-columns: 1fr 1fr
 		grid-column-gap: 190px
 		grid-row-gap: 50px
+		margin-bottom: 50px
 
 		+r(1200)
 			grid-column-gap: 100px
 			grid-row-gap: 30px
+			margin-bottom: 30px
 
 		+r(992)
 			grid-column-gap: 60px
@@ -2807,11 +2683,11 @@ body
 		+r(767)
 			grid-template-columns: 1fr
 			grid-row-gap: 25px
+			margin-bottom: 25px
 
-	hr
-		border: 1px solid #D0D8E3
-		margin-top: 80px
-		margin-bottom: 60px
+	&__size
+		max-width: 1400px
+		margin: 0 auto
 
 	&__contact
 		background: #FFFFFF
@@ -2829,7 +2705,7 @@ body
 		.form__input
 			border: none
 			width: 100%
-			height: 80px
+			height: 60px
 
 		.claim__form
 			width: 100% 
@@ -2858,11 +2734,8 @@ body
 
 		label
 			opacity: 0.8
-			font-size: 20px
+			font-size: 18px
 			margin-bottom: 0
-
-			+r(992)
-				font-size: 18px
 
 		&_wrap
 			display: flex
@@ -2870,8 +2743,8 @@ body
 			gap: 50px
 
 		&_input
-			width: 34px
-			height: 34px
+			width: 24px
+			height: 24px
 			appearance: none
 			border-radius: 50%
 			display: flex
@@ -2882,8 +2755,8 @@ body
 
 			&:checked::after
 				content: " "
-				width: 18px
-				height: 18px
+				width: 12px
+				height: 12px
 				display: block
 				background: $text
 				border-radius: 50%
@@ -2908,10 +2781,7 @@ body
 		.form__checkbox_label
 			color: $text
 			opacity: 0.8
-			font-size: 20px
-
-			+r(992)
-				font-size: 18px
+			font-size: 18px
 
 		.form__checkbox
 			gap: 20px
@@ -2933,7 +2803,7 @@ body
 
 	&__banner
 		background: url(../img/claim.png)
-		height: 350px
+		height: 220px
 		background-repeat: no-repeat
 		background-position: center
 		display: flex
@@ -2943,11 +2813,8 @@ body
 		margin-top: 50px
 		padding: 0 15px
 
-		+r(767)
-			margin: 0
-
 		p
-			font-size: 24px
+			font-size: 20px
 			font-weight: 700
 			text-transform: uppercase
 			font-feature-settings: 'liga' off
@@ -2998,13 +2865,16 @@ body
 	&__wrap
 		display: flex
 		justify-content: space-around
-		margin-bottom: 60px
+		margin-bottom: 40px
+		flex-wrap: wrap
+		gap: 40px
 
 		+r(1200)
-			flex-wrap: wrap
 			justify-content: center
-			gap: 10px
 			margin-bottom: 50px
+
+		+r(992)
+			gap: 6px
 
 		+r(767)
 			gap: 25px
@@ -3026,18 +2896,15 @@ body
 			width: 100%
 
 	&__label
-		font-size: 26px
+		font-size: 18px
 		font-weight: 500
 		color: #fff
-		margin-bottom: 30px
+		margin-bottom: 15px
 		font-family: $f_subtitle
 
 		+r(1200)
-			font-size: 22px
 			margin-bottom: 10px
 
-		+r(992)
-			font-size: 18px
 
 	&__input
 		width: 360px
@@ -3047,7 +2914,7 @@ body
 		background: #F7F7F7
 		border-radius: 2px
 
-		+r(1780)
+		+r(1200)
 			width: 100%
 
 		&::placeholder
@@ -3165,25 +3032,19 @@ body
 		&_label
 			position: relative
 			width: 100%
-			font-size: 26px
+			font-size: 18px
 			color: #fff
 			display: inline-flex
 			align-items: center
 			cursor: pointer
-
-			+r(1200)
-				font-size: 22px
-
-			+r(992)
-				font-size: 18px
 
 			a
 				color: $text
 
 		&_input
 			display: block
-			width: 30px
-			height: 30px
+			width: 24px
+			height: 24px
 			flex-shrink: 0
 			background: #FFFFFF
 			border: 2px solid #DFDFDF
@@ -3195,7 +3056,7 @@ body
 			margin-bottom: 0.5rem
 			&:checked::after
 				content: url(../img/form-check.svg)
-				padding-top: 5px
+				padding-top: 6px
 
 			&:checked + .form__checkbox_label::after
 				transform: scale(1)
@@ -3347,7 +3208,7 @@ body
 		width: 100%
 		max-width: 1800px
 		height: 100%
-		// padding: 50px
+		padding: 80px
 		// border: 1px solid #8d8d8e
 		margin: auto
 		display: flex
@@ -3366,12 +3227,6 @@ body
 
 		&::after
 			border-radius: 20px
-
-		+r(1400)
-			padding: 10px
-		
-		+r(576)
-			padding: 10px
 
 		&_video
 			width: 100%

@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		//---------------slider--example----------
 		var mySwiper = new Swiper('.example__slider', {
 			slidesPerView: 1,
-			spaceBetween: 65,
+			spaceBetween: 50,
 			mousewheel: {
 				invert: true,
 			},
@@ -332,14 +332,14 @@ document.addEventListener("DOMContentLoaded", function() {
 			breakpoints: {
 				767: {
 					slidesPerView: 2,
-					spaceBetween: 65
+					spaceBetween: 50
 				},
 			}
 		});
 
 		//---------------slider--example----------
 		var mySwiper = new Swiper('.team__slider', {
-			slidesPerView: 1.3,
+			slidesPerView: 1,
 			spaceBetween: 10,
 			grabCursor: true,
 			freeMode: {
@@ -351,27 +351,21 @@ document.addEventListener("DOMContentLoaded", function() {
 				clickable: 'true',
 			},
 			breakpoints: {
-				1780: {
+				1200: {
 					slidesPerView: 4,
 					spaceBetween: 40
 				},
-				1500: {
-					slidesPerView: 4.3,
-				},
-				1200: {
+				992: {
 					slidesPerView: 3,
 				},
-				992: {
-					slidesPerView: 2.7,
-				},
 				767: {
-					slidesPerView: 2.2,
+					slidesPerView: 3,
 				},
 				576: {
-					slidesPerView: 1.9,
+					slidesPerView: 2,
 				},
 				360: {
-					slidesPerView: 1.5,
+					slidesPerView: 1,
 					freeMode: {
 						enabled: false,
 						sticky: false,
@@ -417,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 
 		//-------------technology--slider--
-		if (document.documentElement.clientWidth < 767) {
+		if (document.documentElement.clientWidth < 992) {
 
 			var mySwiper = new Swiper('.using__sliderbot', {
 				slidesPerView: 2,

@@ -29,16 +29,7 @@ section.ekr-sticky .sticky--parent .parent--text .sticky--text {
 	position: relative;
 	margin-bottom: 40px;
 }
-section.ekr-sticky .sticky--parent .parent--text .sticky--text::before {
-	content: "";
-	height: calc(100% + 35px);
-	width: 2px;
-	background-color: #918EFF;
-	position: absolute;
-	top: 34px;
-	z-index: 1;
-	left: 17px;
-}
+
 section.ekr-sticky .sticky--parent .parent--text .sticky--text:last-child::before {
 	display: none;
 }
@@ -47,13 +38,13 @@ section.ekr-sticky .sticky--parent .parent--text .sticky--text span.text--num {
 	z-index: 10;
 	left: -75px;
 	background-color: white;
-	border: 2px solid #918EFF;
+	border: 3px solid #3159EC;
 	color: black;
 	width: 35px;
 	height: 35px;
 	text-align: center;
 	border-radius: 100%;
-	line-height: 32px;
+	line-height: 30px;
 	transition: all .5s;
 }
 section.ekr-sticky .sticky--parent .parent--text .sticky--text.active span.text--num {
